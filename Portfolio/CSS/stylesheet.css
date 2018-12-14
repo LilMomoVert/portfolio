@@ -1,8 +1,389 @@
-#home {
-  background: url(test.jpg) no-repeat; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 900px;
+html {
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background: #f9b91e;
+  color: white;
+}
+
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  font-family: 'Raleway SemiBold', monospace;
+  font-size: 100%;
+
+}
+
+#menuWrapper {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    z-index: 10;
+}
+
+#articleWhyMe{
+  background-color: #f6f6f6f6;
+}
+
+#span2{
+    padding-top: 20px;
+}
+
+#menuContainer{
+    width: 100%;
+    margin: auto;
+}
+
+ul {
+    float: right;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+li {
+    margin-left: 25px;
+    border-bottom: 1px solid rgb(190, 40, 53);
+    display:inline-block;
+    vertical-align: top;
+    font-weight: 600;
+}
+
+
+li a {
+    display:block;
+    min-width:140px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+    text-decoration:none;
+    font-size: 1rem;
+}
+
+li:hover a {
+  border-bottom: 2px solid rgb(190, 40, 53);
+    color: black;
+    background-color: white;
+}
+
+.show-menu {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-decoration:none;
+    color:#fff;
+    background:#f9b91e;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align:center;
+    padding:16px 0;
+    display:none;
+    width:100%!important
+}
+
+.long-fade-in {
+    animation-name: long-fade-in;
+    animation-duration: 4s;
+}
+
+.main-header-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1040px;
+    text-align: left;
+}
+
+.main-header-side-content {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    margin-top: 0;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.main-header-side-content button {
+    background: none;
+    border: 1px solid #5bc0de;
+    border-radius: 6px;
+    color: #5bc0de;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 1em 0;
+    padding: .4rem;
+    transition: background-color .5s, color .5s;
+    width: 90%;
+}
+
+.HeaderContent{
+  text-align: left;
+  margin-left: 10%;
+}
+
+.button1 {
+  margin-top: 3% !important;
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(190, 40, 53);
+}
+
+.button1:hover {
+  background-color: white; 
+  color: black;
+}
+
+.button {
+  background-color: transparent;
+  color: white;
+  width: 250px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.highlight {
+  font-weight: 800;
+  color: rgb(190, 40, 53);
+}
+
+input[type=checkbox] {
+    display:none
+}
+
+input[type=checkbox]:checked ~ #menu {
+    display:block;
+    margin:0 auto;
+}
+
+.main-button {
+    margin-top: 5%;
+    background-color: rgb(190, 40, 53);
+    border: 1px solid rgb(190, 40, 53);
+    border-radius: 3px;
+    color: #fff;
+    padding: 1rem;
+    transition: background-color .5s, color .5s, border-color .5s;
+    width: 50%;
+}
+
+.main-button:hover {
+    background-color: #fff;
+    color: rgb(190, 40, 53);
+    border-color: rgb(190, 40, 53);
+}
+
+
+.mainHeader {
+    background: url(../Images/Headerbackground.jpg) center center no-repeat;
+    background-size: cover;
+    height: 500px;
+    min-height: 300px;
+    padding: 35vh 1em 0;
+    text-align: center;
+}
+
+.container1 {
+  width: 44%;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box; 
+}
+
+.container2 {
+  width: 32%;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box; 
+}
+
+.container3 {
+  width: 32%;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box; 
+}
+
+.container4 {
+  width: 50%;
+  margin: 0 auto;
+  vertical-align: middle;
+  box-sizing: border-box; 
+}
+
+.container4 p {
+  padding-left: 20px;
+  border-left: 5px solid rgb(190, 40, 53);
+}
+
+#iconSkills {
+   text-align: center;
+   font-size: 50px;
+   color: rgb(190, 40, 53);
+}
+
+.artikkelinnhold {
+  width: 85%;
+  margin: 0 auto;
+  color: #555555;
+  padding: 20px;
+}
+
+.innhold {
+  margin-top: 6%;
+  margin-bottom: 100px;
+}
+
+.innhold img {
+  margin: 0 auto;
+  display: block;
+    width: 50%;
+}
+
+section {
+    position: absolute;
+  top: 100%;
+    width: 100%;
+
+}
+
+article {
+  background-color: white;
+}
+
+article div {
+  
+}
+
+
+/* Below are only @media css, Nedenfor er bare @meda css */
+
+@media screen and (max-width: 722px) {
+
+    header {
+        height: 700px;
+    }
+}
+
+
+@media screen and (max-width: 982px) {
+  body {
+    font-size: 79.999%;
+  } 
+    .viddeProblem {
+    width: 100%;
+    }
+  
+  .column {
+    width: 100% !important;
+  }
+  
+  .innhold {
+    margin-bottom: 0px;
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.5em !important;
+  }
+  
+  h2 {
+    font-size: 2em !important;
+  }
+  
+  h3 {
+    font-size: 1.5em !important;
+  }
+  
+  header h1 {
+    font-size: 1em !important;
+  }
+}
+
+/* Bruker media screen for at download button pÃ¥ homepage skal bli responsive */
+@media screen and (max-width: 1150px) {
+    .myButton {
+        width: 102%;
+        margin-top: 10px;
+    }
+}
+
+/*Responsive Styles*/
+@media screen and (max-width : 936px) {
+    /*Make dropdown links appear inline*/
+      li{
+    margin-left: 0;
+  }
+
+    ul {
+        position:static;
+        display:none;
+        white-space: initial;
+        background-color: white;
+    }
+    
+
+    li:hover a {
+        color: white;
+        background-color: black;
+    }
+    
+    /*Make all menu links full width*/
+    ul li,li a {
+        width:100%;
+        color: black; 
+
+    }
+    
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block
+    }
+
+    .show-menu {
+    background-color: rgb(190, 40, 53);
+    }
+}
+
+@media screen and (max-width: 850px){ 
+    
+    .viddeLosning {
+    width: 100%;
+    
+    }
+}
+
+
+@media screen and (max-width: 982px){ #txt {
+    width: 100%;
+    
+    }
+}
+
+@media screen and (max-width: 800px){ .iPhoneHow {
+    width: 100%;
+    
+    }
+}
+
+@media screen and (max-width: 800px){ #iPhonetxt {
+    width: 100%;
+    
+    }
 }
