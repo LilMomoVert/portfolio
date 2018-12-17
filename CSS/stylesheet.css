@@ -4,7 +4,7 @@ html {
 }
 
 ::selection {
-  background: #f9b91e;
+  background: rgb(190, 40, 53);
   color: white;
 }
 
@@ -18,6 +18,13 @@ body {
   font-size: 100%;
 
 }
+
+
+.PortfolioImg:hover {
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+}
+
 
 #menuWrapper {
     position: absolute;
@@ -231,6 +238,7 @@ input[type=checkbox]:checked ~ #menu {
 
 .containerWhyMe {
   width: 32%;
+  text-align: center;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box; 
